@@ -1,7 +1,8 @@
 class Bubble {
-    constructor() {
-        this.x = 200;
-        this.y = 150
+    constructor(tempX, tempY, tempR) {
+        this.x = tempX;
+        this.y = tempY;
+        this.r = tempR;
     }
 
     move() {
@@ -18,8 +19,8 @@ class Bubble {
     }
 }
 
-let bubble1 = new Bubble;
-let bubble2 = new Bubble;
+let bubble1 = new Bubble(200, 400, 40);
+let bubble2 = new Bubble(500, 500, 50);
 
 function draw() {
     background(0);
